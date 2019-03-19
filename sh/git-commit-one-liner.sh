@@ -1,0 +1,1 @@
+git add -A && git add -u && git commit -m "adding snippet link"
