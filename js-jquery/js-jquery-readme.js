@@ -147,18 +147,84 @@ jQuery.error()
 
 doc.jquery_manipulation=
 `
+.addClass()
+.after()
+.append()
+.appendTo()
+.attr()
+.before()
+.clone()
+.css()
+.detach()
+.empty()
+.hasClass()
+.height()
+.html()
+.innerHeight()
+.innerWidth()
+.insertAfter()
+.insertBefore()
+jQuery.cssNumber
+jQuery.htmlPrefilter()
+.offset()
+.outerHeight()
+.outerWidth()
+.position()
+.prepend()
+.prependTo()
+.prop()
+.remove()
+.removeAttr()
+.removeClass()
+.removeProp()
+.replaceAll()
+.replaceWith()
+.scrollLeft()
+.scrollTop()
+.text()
+.toggleClass()
+.unwrap()
+.val()
+.width()
+.wrap()
+.wrapAll()
+.wrapInner()
 `;
 
 doc.jquery_miscellaneous=
 `
+.data()
+.each()
+.get()
+.index()
+jQuery.noConflict()
+jQuery.param()
+.removeData()
+# .size()
+.toArray()
 `;
 
 doc.jquery_offset=
 `
+.offset()
+.offsetParent()
+.position()
+.scrollLeft()
+.scrollTop()
 `;
 
 doc.jquery_properties=
 `
+# .context
+.jquery
+# jQuery.browser
+# jQuery.fx.interval
+jQuery.fx.off
+jQuery.holdReady()
+jQuery.ready
+# jQuery.support
+.length
+# .selector
 `;
 
 doc.jquery_selectors=
