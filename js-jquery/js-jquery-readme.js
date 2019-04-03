@@ -118,10 +118,36 @@ doc.jquery_data=
 
 doc.jquery_deferred_object=
 `
+deferred.always()
+deferred.catch()
+deferred.done()
+deferred.fail()
+# deferred.isRejected()
+# deferred.isResolved()
+deferred.notify()
+deferred.notifyWith()
+# deferred.pipe()
+deferred.progress()
+deferred.promise()
+deferred.reject()
+deferred.rejectWith()
+deferred.resolve()
+deferred.resolveWith()
+deferred.state()
+deferred.then()
+jQuery.Deferred()
+jQuery.when()
+.promise()
 `;
 
 doc.jquery_dimensions=
 `
+.height()
+.innerHeight()
+.innerWidth()
+.outerHeight()
+.outerWidth()
+.width()
 `;
 
 doc.jquery_effects=
@@ -136,7 +162,7 @@ doc.jquery_effects=
 .fadeToggle()
 .finish()
 .hide()
-# jQuery.fx.internal
+# jQuery.fx.interval
 jQuery.fx.off
 jQuery.speed
 .queue()
