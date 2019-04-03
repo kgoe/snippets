@@ -126,6 +126,26 @@ doc.jquery_dimensions=
 
 doc.jquery_effects=
 `
+.animate()
+.clearQueue()
+.delay()
+.dequeue()
+.fadeIn()
+.fadeOut()
+.fadeTo()
+.fadeToggle()
+.finish()
+.hide()
+# jQuery.fx.internal
+jQuery.fx.off
+jQuery.speed
+.queue()
+.show()
+.slideDown()
+.slideToggle()
+.slideUp()
+.stop()
+.toggle()
 `;
 
 doc.jquery_events=
@@ -168,8 +188,8 @@ jQuery.ready()
 .keydown()
 .keypress()
 .keyup()
-.live()
-.load()
+# .live()
+# .load()
 .mousedown()
 .mouseenter()
 .mouseleave()
