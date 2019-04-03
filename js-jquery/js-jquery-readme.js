@@ -3,6 +3,11 @@
 doc.name=
 `
 jQuery
+jQuery API
+`;
+
+doc.jquery_api_index=
+`
 `;
 
 doc.links=
