@@ -94,10 +94,38 @@ removed
 
 doc.jquery_ajax=
 `
+.ajaxComplete()
+.ajaxError()
+.ajaxSend()
+.ajaxStart()
+.ajaxStop()
+.ajaxSuccess()
+jQuery.ajax()
+jQuery.ajaxPrefilter()
+jQuery.ajaxSetup()
+jQuery.ajaxTransport()
+jQuery.get()
+jQuery.getJSON()
+jQuery.getScript()
+jQuery.param()
+jQuery.post()
+.load()
+.serialize()
+.serializeArray()
 `;
 
 doc.jquery_attributes=
 `
+.addClass()
+.attr()
+.hasClass()
+.html()
+.prop()
+.removeAttr()
+.removeClass()
+.removeProp()
+.toggleClass()
+.val()
 `;
 
 doc.jquery_callbacks_object=
