@@ -16,6 +16,14 @@ $.ajax({
 
 // EG
 $.ajaxSetup({
+  url: "/xmlhttp/",
+  global: false,
+  type: "POST"
+});
+$.ajax({ data: myData });
+
+// EG
+$.ajaxSetup({
   contents: {
     mycustomtype: /mycustomtype/
   },
@@ -202,4 +210,125 @@ $.ajax({
   method: "GET",
   url: "test.js",
   dataType: "script"
+});
+
+// jQuery.ajaxTransport()
+
+// EG
+$.ajaxTransport( dataType, function( options, originalOptions, jqXHR ) {
+  if( /* transportCanHandleRequest */ ) {
+    return {
+      send: function( headers, completeCallback ) {
+        // Send code
+      },
+      abort: function() {
+        // Abort code
+      }
+    };
+  }
+});
+
+// function( status, statusText, responses, headers ) {}
+
+// EG
+$.ajaxTransport( "script", function( options, originalOptions, jqXHR ) {
+  // Will only be called for script requests
+});
+
+// EG
+$.ajaxTransport( "image", function( s ) {
+  if ( s.type === "GET" && s.async ) {
+    var image;
+    return {
+      send: function( _ , callback ) {
+        image = new Image();
+        function done( status ) {
+          if ( image ) {
+            var statusText = ( status === 200 ) ? "success" : "error",
+              tmp = image;
+            image = image.onreadystatechange = image.onerror = image.onload = null;
+            callback( status, statusText, { image: tmp } );
+          }
+        }
+        image.onreadystatechange = image.onload = function() {
+          done( 200 );
+        };
+        image.onerror = function() {
+          done( 404 );
+        };
+        image.src = s.url;
+      },
+      abort: function() {
+        if ( image ) {
+          image = image.onreadystatechange = image.onerror = image.onload = null;
+        }
+      }
+    };
+  }
+});
+
+// List of data converters
+// 1) Key format is "source_type destination_type"
+//    (a single space in-between)
+// 2) The catchall symbol "*" can be used for source_type
+converters: {
+  // Convert anything to text
+  "* text": window.String,
+  // Text to html (true = no transformation)
+  "text html": true,
+  // Evaluate text as a json expression
+  "text json": jQuery.parseJSON,
+  // Parse text as xml
+  "text xml": jQuery.parseXML
+}
+
+// EG + ajaxSetup()
+jQuery.ajaxSetup({
+  accepts: {
+    script: "text/javascript, application/javascript"
+  },
+  contents: {
+    script: /javascript/
+  },
+  converters: {
+    "text script": jQuery.globalEval
+  }
+});
+
+// jQuery.ajasPrefilter()
+
+// EG
+$.ajaxPrefilter(function( options, originalOptions, jqXHR ) {
+  // Modify options, control originalOptions, store jqXHR, etc
+});
+
+// EG
+var currentRequests = {};
+$.ajaxPrefilter(function( options, originalOptions, jqXHR ) {
+  if ( options.abortOnRetry ) {
+    if ( currentRequests[ options.url ] ) {
+      currentRequests[ options.url ].abort();
+    }
+    currentRequests[ options.url ] = jqXHR;
+  }
+});
+
+// EG
+$.ajaxPrefilter(function( options ) {
+  if ( options.crossDomain ) {
+    options.url = "https://mydomain.net/proxy/" + encodeURIComponent( options.url );
+    options.crossDomain = false;
+  }
+});
+
+// EG
+$.ajaxPrefilter( "json script", function( options, originalOptions, jqXHR ) {
+  // Modify options, control originalOptions, store jqXHR, etc
+});
+
+// EG
+$.ajaxPrefilter(function( options ) {
+  if ( isActuallyScript( options.url ) ) {
+    return "script";
+  }
 });
