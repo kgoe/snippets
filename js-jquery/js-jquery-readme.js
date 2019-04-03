@@ -106,6 +106,13 @@ doc.jquery_callbacks_object=
 
 doc.jquery_core=
 `
+jQuery()
+jQuery.holdReady()
+jQuery.noConflict()
+jQuery.ready()
+jQuery.readyException()
+# jQuery.sub()
+jQuery.when()
 `;
 
 doc.jquery_css=
