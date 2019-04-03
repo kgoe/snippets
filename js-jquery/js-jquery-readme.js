@@ -130,6 +130,68 @@ doc.jquery_effects=
 
 doc.jquery_events=
 `
+# .bind()
+.blur()
+.change()
+.click()
+.contextmenu()
+.dblclick()
+# .delegate()
+# .die()
+# .error()
+event.currentTarget
+event.data
+event.delegateTarget
+event.isDefaultPrevented()
+event.isImmediatePropagationStopped()
+event.isPropagationStopped()
+event.metaKey
+event.namespace
+event.pageX
+event.pageY
+event.preventDefault()
+event.relatedTarget
+event.result
+event.stopImmediatePropagation()
+event.stopPropagation()
+event.target
+event.timeStamp
+event.type
+event.which
+.focus()
+.focusin()
+.focusout()
+.hover()
+jQuery.holdReady()
+jQuery.proxy()
+jQuery.ready()
+.keydown()
+.keypress()
+.keyup()
+.live()
+.load()
+.mousedown()
+.mouseenter()
+.mouseleave()
+.mousemove()
+.mouseout()
+.mouseover()
+.mouseup()
+.off()
+.on()
+.one()
+.ready()
+.resize()
+.scroll()
+.select()
+.submit()
+# .toggle()
+.trigger()
+.triggerHandler()
+# .unbind()
+# .undelegate()
+# .unload()
+
 `;
 
 doc.jquery_forms=
