@@ -110,10 +110,38 @@ doc.jquery_core=
 
 doc.jquery_css=
 `
+.addClass()
+.css()
+.hasClass()
+.height()
+.innerHeight()
+.innerWidth()
+jQuery.cssHooks
+jQuery.cssNumber
+jQuery.escapeSelector()
+.offset()
+.outerHeight()
+.outerWidth()
+.position()
+.removeClass()
+.scrollLeft()
+.scrollTop()
+.toggleClass()
+.width()
 `;
 
 doc.jquery_data=
 `
+.clearQueue()
+.data()
+.dequeue()
+jQuery.data()
+jQuery.dequeue()
+jQuery.hasData()
+jQuery.queue()
+jQuery.removeData()
+.queue()
+.removeData()
 `;
 
 doc.jquery_deferred_object=
