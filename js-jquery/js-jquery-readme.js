@@ -102,6 +102,17 @@ doc.jquery_attributes=
 
 doc.jquery_callbacks_object=
 `
+jQuery.Callbacks()
+callbacks.add()
+callbacks.disable()
+callbacks.disabled()
+callbacks.empty()
+callbacks.fire()
+callbacks.fired()
+callbacks.fireWith()
+callbacks.has()
+callbacks.lock()
+callbacks.remove()
 `;
 
 doc.jquery_core=
@@ -153,6 +164,7 @@ jQuery.removeData()
 
 doc.jquery_deferred_object=
 `
+jQuery.deferred()
 deferred.always()
 deferred.catch()
 deferred.done()
