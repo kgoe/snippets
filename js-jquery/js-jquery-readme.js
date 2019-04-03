@@ -134,6 +134,17 @@ doc.jquery_events=
 
 doc.jquery_forms=
 `
+.blur()
+.change()
+.focus()
+.focusin()
+.focusout()
+jQuery.param()
+.select()
+.serialize()
+.serializeArray()
+.submit()
+.val()
 `;
 
 doc.jquery_internals=
