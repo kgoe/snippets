@@ -1,4 +1,4 @@
-;
+;doc={};
 
 // jQuery.ajaxSetup
 // jQuery.ajaxSetup( options )
