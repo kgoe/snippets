@@ -265,5 +265,30 @@ $( "span:last" ).text( "Found " + $( "input:hidden" ).length + " hidden inputs."
 // >>> :target selector
 
 // >>> :text selector
+jQuery( ":text" );
+
+$( "<input>" ).is( "[type=text]" ); // false
+$( "<input>" ).is( ":text" ); // true
+
+var input = $( "form input:text" ).css({
+  background: "yellow",
+  border: "3px red solid"
+});
+ 
+$( "div" )
+  .text( "For this type jQuery found " + input.length + "." )
+  .css( "color", "red" );
+ 
+// Prevent form submission
+$( "form" ).submit(function( event ) {
+  event.preventDefault();
+});
 
 // >>> :visible selector
+jQuery( ":visible" );
+$( "div:visible" ).click(function() {
+  $( this ).css( "background", "yellow" );
+});
+$( "button" ).click(function() {
+  $( "div:hidden" ).show( "fast" );
+});
