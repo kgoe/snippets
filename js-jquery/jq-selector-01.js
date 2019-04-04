@@ -169,5 +169,101 @@ $( "div span:first-child" )
 jQuery( ":first-of-type" );
 $( "span:first-of-type" ).addClass( "fot" );
 
+// >>> :first selector
+jQuery( ":first" );
+$( "tr:first" ).css( "font-style", "italic" );
 
+// >>> :focus selector
+jQuery( ":focus" );
+$( "#content" ).delegate( "*", "focus blur", function() {
+  var elem = $( this );
+  setTimeout(function() {
+    elem.toggleClass( "focused", elem.is( ":focus" ) );
+  }, 0 );
+});
 
+// >>> :gt() selector
+jQuery( ":gt(index)" );
+jQuery( ":gt(-index)" );
+$( "td:gt(4)" ).css( "backgroundColor", "yellow" );
+$( "td:gt(-2)" ).css( "color", "red" );
+
+// >>> has attribute selector
+jQuery( "[attribute]" );
+$( "div[id]" ).one( "click", function() {
+  var idString = $( this ).text() + " = " + $( this ).attr( "id" );
+  $( this ).text( idString );
+});
+
+// >>> :header selector
+jQuery( ":header" );
+// .filter(':header');
+$( ":header" ).css({ background: "#ccc", color: "blue" });
+
+// >>> :hidden selector
+jQuery( ":hidden" );
+// In some browsers :hidden includes head, title, script, etc...
+var hiddenElements = $( "body" ).find( ":hidden" ).not( "script" );
+$( "span:first" ).text( "Found " + hiddenElements.length + " hidden elements total." );
+$( "div:hidden" ).show( 3000 );
+$( "span:last" ).text( "Found " + $( "input:hidden" ).length + " hidden inputs." );
+
+// >>> #id selector
+
+// >>> :image selector
+
+// >>> :input selector
+
+// >>> :lang() selector
+
+// >>> :last-child selector
+
+// >>> :last-of-type selector
+
+// >>> :last selector
+
+// >>> :lt() selector
+
+// >>> Multiple Attribute Selector [name=”value”][name2=”value2″]
+
+// >>> Multiple Selector (“selector1, selector2, selectorN”)
+
+// >>> Next Adjacent Selector (“prev + next”)
+
+// >>> Next Siblings Selector (“prev ~ siblings”)
+
+// >>> :not() selector
+
+// >>> :nth-child() selector
+
+// >>> :nth-last-child() selector
+
+// >>> :nth-last-of-type() selector
+
+// >>> :nth-of-type() selector
+
+// >>> :odd selector
+
+// >>> :only-child selector
+
+// >>> :only-of-type selector
+
+// >>> :parent selector
+
+// >>> :password selector
+
+// >>> :radio selector
+
+// >>> :reset selector
+
+// >>> :root selector
+
+// >>> :selected selector
+
+// >>> :submit selector
+
+// >>> :target selector
+
+// >>> :text selector
+
+// >>> :visible selector
