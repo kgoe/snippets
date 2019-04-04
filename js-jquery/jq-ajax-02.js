@@ -1,16 +1,41 @@
 ;doc={};
 
+/**
+ * Shared Functions
+ */
+
+/**
+ * jqCbComplete
+ * @param {*} jqXHR 
+ * @param {*} textStatus 
+ */
 var jqCbComplete = function jqCbComplete(jqXHR, textStatus){
   console.log(jqXHR,textStatus);
 };
 
+/**
+ * jqCbSuccess
+ * @param {*} res 
+ * @param {*} textStatus 
+ * @param {*} jqXHR 
+ */
 var jqCbSuccess = function jqCbSuccess(res, textStatus, jqXHR) {
   console.log(res,textStatus,jqXHR);
 };
 
+/**
+ * jsCbError
+ * @param {*} jqXHR 
+ * @param {*} textStatus 
+ * @param {*} errorThrown 
+ */
 var jsCbError = function jsCbError(jqXHR, textStatus, errorThrown){
   console.log(jqXHR,textStatus,errorThrown);
 };
+
+/**
+ * Settings Parameters Properties
+ */
 
 var jqAjaxParams = {
   accepts: {},
@@ -63,4 +88,7 @@ var jqAjaxParamsSimple = {
     // crossOrigin: true,
 }
 
+/**
+ * $.ajax call with parameters
+ */
 $.ajax(jqAjaxParams);
