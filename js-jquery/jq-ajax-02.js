@@ -51,4 +51,16 @@ var jqAjaxParams = {
   },
 };
 
+var jqAjaxParamsSimple = {
+    type: "POST", // "GET" "POST"
+    method: "POST", // "GET" "POST"
+    url: "https://www.google.com",
+    data: {},
+    success: jqCbSuccess,
+    contentType: "application/x-www-form-urlencoded;charset=UTF-8",
+    error: jsCbError,
+    dataType: "json",
+    // crossOrigin: true,
+}
+
 $.ajax(jqAjaxParams);
