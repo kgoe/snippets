@@ -259,10 +259,42 @@ $( "span:last" ).text( "Found " + $( "input:hidden" ).length + " hidden inputs."
 // >>> :root selector
 
 // >>> :selected selector
+jQuery( ":selected" );
+// .filter(":selected");
+$( "select" )
+  .change(function() {
+    var str = "";
+    $( "select option:selected" ).each(function() {
+      str += $( this ).text() + " ";
+    });
+    $( "div" ).text( str );
+  })
+  .trigger( "change" );
 
 // >>> :submit selector
+jQuery( ":submit" );
+var submitEl = $( "td :submit" )
+  .parent( "td" )
+    .css({
+      background: "yellow",
+      border: "3px red solid"
+    })
+  .end();
+$( "#result" ).text( "jQuery matched " + submitEl.length + " elements." );
+$( "form" ).submit(function( event ) {
+  // Prevent form submission
+  event.preventDefault();
+});
+$( "#exampleTable" ).find( "td" ).each(function( i, el ) {
+  // Extra JS to make the HTML easier to edit (None of this is relevant to the ':submit' selector)
+  var inputEl = $( el ).children(),
+    inputType = inputEl.attr( "type" ) ? " type='" + inputEl.attr( "type" ) + "'" : "" ;
+  $( el ).before( "<td>" + inputEl[ 0 ].nodeName + inputType + "</td>" );
+})
 
 // >>> :target selector
+jQuery( ":target" );
+$( "p:target" );
 
 // >>> :text selector
 jQuery( ":text" );
