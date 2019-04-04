@@ -111,3 +111,63 @@ $( "input:disabled" ).val( "this is it" );
 // >>> element selector
 jQuery( "element" );
 $( "div" ).css( "border", "9px solid red" );
+
+// >>> :empty selector
+jQuery( ":empty" );
+$( "td:empty" )
+  .text( "Was empty!" )
+  .css( "background", "rgb(255,220,200)" );
+
+// >>> :enabled selector
+jQuery( ":enabled" );
+$( "input:enabled" ).val( "this is it" );
+
+// >>> :eq() selector
+// >>> family of filter selectors :eq() :gt() :lt() :even :odd
+// >>> querySelectorAll() usage
+jQuery( ":eq(index)" );
+jQuery( ":eq(-index)" );
+$( "td:eq( 2 )" ).css( "color", "red" );
+// Applies yellow background color to a single <li>
+$( "ul.nav li:eq(1)" ).css( "backgroundColor", "#ff0" );
+// Applies italics to text of the second <li> within each <ul class="nav">
+$( "ul.nav" ).each(function( index ) {
+  $( this ).find( "li:eq(1)" ).css( "fontStyle", "italic" );
+});
+// Applies red text color to descendants of <ul class="nav">
+// for each <li> that is the second child of its parent
+$( "ul.nav li:nth-child(2)" ).css( "color", "red" );
+
+// >>> :even selector
+jQuery( ":even" );
+$( "tr:even" ).css( "background-color", "#bbf" );
+
+// >>> :file selector
+jQuery( ":file" );
+var input = $( "input:file" ).css({
+  background: "yellow",
+  border: "3px red solid"
+});
+$( "div" )
+  .text( "For this type jQuery found " + input.length + "." )
+  .css( "color", "red" );
+$( "form" ).submit(function( event ) {
+  event.preventDefault();
+});
+
+// >>> :first-child selector
+jQuery( ":first-child" );
+$( "div span:first-child" )
+  .css( "text-decoration", "underline" )
+  .hover(function() {
+    $( this ).addClass( "sogreen" );
+  }, function() {
+    $( this ).removeClass( "sogreen" );
+  });
+
+// >>> :first-of-type selector
+jQuery( ":first-of-type" );
+$( "span:first-of-type" ).addClass( "fot" );
+
+
+
