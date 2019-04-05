@@ -1,5 +1,9 @@
-### common html tags
+;doc={};
 
+doc.name='common html tags';
+
+doc.tags=
+`
 <!--...-->|Defines a comment
 <!DOCTYPE>|Defines the document type
 <a>|Defines a hyperlink
@@ -119,3 +123,4 @@
 <var>|Defines a variable
 <video>|Defines a video or movie
 <wbr>|Defines a possible line-break
+`;
