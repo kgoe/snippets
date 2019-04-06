@@ -2,47 +2,24 @@
 
 doc.bootstrap3examples=
 `
-01|
-02|
-03|
-04|
-05|
-06|
-07|
-08|
-09|
-10|
-11|
-12|
-13|
-14|
-15|
-16|
-17|
-18|
-19|
-20|
-
-blog
-carousel
-cover
-dashboard
-grid
-jumbotron
-jumbotron-narrow
-justified-nav
-navbar
-navbar-fixed-top
-navbar-static-top
-non-responsive
-offcanvas
-screenshots
-signin
-starter-template
-sticky-footer
-sticky-footer-navbar
-theme
-tooltip-viewport
+01|starter template
+02|bootstrap theme
+03|grids
+04|jumbotron
+05|narrow jumbotron
+06|navbar
+07|static top navbar
+08|fixed navbar
+09|cover
+10|carousel
+11|blog
+12|dashboard
+13|sign in page
+14|justified nav
+15|sticky footer
+16|sticky footer with nav
+17|non responsive bootstrap
+18|off canvas
 `;
 
 doc.bootstrap4examples=
