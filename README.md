@@ -22,3 +22,14 @@ crossdomain.xml
 browserconfig.xml
 .gitignore
 .htaccess
+
+### Reference
+R001|Essential JS Design Patterns
+RXXX|Javascript Design Patterns for Humans|Soham Kamani
+RXXX|JavaScript-Design-Patterns
+RXXX|Design-Patterns-JS
+RXXX|JavaScript-Templates
+R200|Design Patterns in JavaScript ES6
+R201|
+
+A001|express-4.16.4
