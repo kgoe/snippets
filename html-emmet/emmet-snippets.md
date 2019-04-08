@@ -1,4 +1,9 @@
 ### emmet snippets
+
+html>(head+body)
+
+html>((head>(meta+title+style+link+script))+(body>(header+main+footer)))
+
 div.container
 .container
 
