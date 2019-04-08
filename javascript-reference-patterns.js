@@ -64,7 +64,6 @@ jQuery Plugin Patterns
 JavaScript Namespacing Patterns
 Conclusion
 References
-
 `;
 })(doc);
 
