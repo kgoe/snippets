@@ -1,0 +1,30 @@
+{
+  "name": "kg-snippets",
+  "version": "0.0.1",
+  "description": "web development snippets",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgoe/snippets.git"
+  },
+  "keywords": [
+    "web",
+    "html",
+    "javascript",
+    "css",
+    "snippets"
+  ],
+  "author": "kgoespiritu@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgoe/snippets/issues"
+  },
+  "homepage": "https://github.com/kgoe/snippets#readme",
+  "dependencies": {
+    "emmet": "^1.6.3",
+    "node-plantuml": "^0.8.1"
+  }
+}
