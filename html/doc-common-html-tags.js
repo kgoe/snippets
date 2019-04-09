@@ -253,3 +253,17 @@ doc.tags_details=
 <video>|Defines a video or movie
 <wbr>|Defines a possible line-break
 `;
+
+// End
+if ( typeof module !== 'undefined'
+  && typeof require !== 'undefined'
+  && typeof require.main !== 'undefined'
+  && typeof module.exports !== 'undefined'
+  && require.main === module
+) {
+  console.log('LOADED : node', __filename);
+} else {
+  console.log('LOADED : node-module', __filename);
+  module.exports = HTTU;
+}
+
