@@ -6,7 +6,17 @@
 // console.log(emmet);
 // console.log(tags);
 
-doc.separators=
+/**
+ * template
+ */
+((doc)=>{
+})(doc);
+
+/**
+ * separators
+ */
+((doc)=>{
+  doc.separators=
 `
  
 >
@@ -19,19 +29,31 @@ $
 .
 {}
 `;
+})(doc);
 
-template.t000=
+/**
+ * basic html templates
+ */
+((doc)=>{
+})(doc);
+
+/**
+ * full html templates
+ */
+((doc)=>{
+
+doc.t000=
 `
 html:5
 `;
 
-template.t001=
+doc.t001=
 `
 html>
 (head+body)
 `;
 
-template.t010=
+doc.t010=
 `
 html>
 (
@@ -45,36 +67,45 @@ header+main{lorem $}+footer
 )
 `;
 
-template.t101=`nav>ul>li`;
-template.t102=`div+p+bq`;
-template.t103=`div+div>p>span+em^bq`;
-template.t104=`div>(header>ul>li*2>a)+footer>p`;
-template.t105=`(div>dl>(dt+dd)*3)+footer>p`;
-template.t106=`ul>li*5`;
-template.t107=`ul>li.sample$*5`;
-template.t108=`h$[title=topic$]{Headline $}*3`;
-template.t109=`ul>li.item$$$*5`;
-template.t110=`ul>li.item$@-*5`;
-template.t111=`ul>li.item$@3*5`;
-template.t112=`#header`;
-template.t113=`.title`;
-template.t114=`form#search.wide`;
-template.t115=`p.class1.class2.class3`;
-template.t116=`p[title="Hello world"]`;
-template.t117=`td[rowspan=2 colspan=3 title]`;
-template.t118=`[a="value1" b="value2"]`;
-template.t119=`a{Click me}`;
-template.t120=`p>{Click }+a{here}+{ to continue}`;
+})(doc);
 
-template.t121=`.class`;
-template.t122=`em>.class`;
-template.t123=`ul>.class`;
-template.t124=`table>.row>.col`;
+/**
+ * snippet html template
+ */
+((doc)=>{
+doc.t101=`nav>ul>li`;
+doc.t102=`div+p+bq`;
+doc.t103=`div+div>p>span+em^bq`;
+doc.t104=`div>(header>ul>li*2>a)+footer>p`;
+doc.t105=`(div>dl>(dt+dd)*3)+footer>p`;
+doc.t106=`ul>li*5`;
+doc.t107=`ul>li.sample$*5`;
+doc.t108=`h$[title=topic$]{Headline $}*3`;
+doc.t109=`ul>li.item$$$*5`;
+doc.t110=`ul>li.item$@-*5`;
+doc.t111=`ul>li.item$@3*5`;
+doc.t112=`#header`;
+doc.t113=`.title`;
+doc.t114=`form#search.wide`;
+doc.t115=`p.class1.class2.class3`;
+doc.t116=`p[title="Hello world"]`;
+doc.t117=`td[rowspan=2 colspan=3 title]`;
+doc.t118=`[a="value1" b="value2"]`;
+doc.t119=`a{Click me}`;
+doc.t120=`p>{Click }+a{here}+{ to continue}`;
+doc.t121=`.class`;
+doc.t122=`em>.class`;
+doc.t123=`ul>.class`;
+doc.t124=`table>.row>.col`;
+})(doc);
 
-var t000=template.t000.split('\n').join('');
-var t010=template.t010.split('\n').join('');
+/**
+ * usage
+ */
+var emmet001=doc.t000.split('\n').join('');
+var emmet002=doc.t010.split('\n').join('');
 
-var t000h=emmet.expandAbbreviation(template.t001);
-var t010h=emmet.expandAbbreviation(t010);
+var html001=emmet.expandAbbreviation(emmet001);
+var html002=emmet.expandAbbreviation(emmet002);
 
-console.log(t000h);
+console.log(html001);
