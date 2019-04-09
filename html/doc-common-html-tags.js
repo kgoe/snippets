@@ -264,6 +264,6 @@ if ( typeof module !== 'undefined'
   console.log('LOADED : node', __filename);
 } else {
   console.log('LOADED : node-module', __filename);
-  module.exports = HTTU;
+  module.exports = doc;
 }
 
