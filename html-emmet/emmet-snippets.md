@@ -65,8 +65,6 @@ element > nested-element.classname * how-many-nested
 
 ##### css transform, transition
 
-
-
 #### xsl quick codes
 tmatch
 tm
