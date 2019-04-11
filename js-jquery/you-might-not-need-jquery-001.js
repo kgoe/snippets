@@ -1,9 +1,78 @@
 ;doc={};
 
+doc.limks=
+`
+http://youmightnotneedjquery.com/
+`;
+
+doc.ajax_json=
+`
+$.getJSON('/my/url', function(data) { /* ... */ });
+
+var request = new XMLHttpRequest();
+request.open('GET', '/my/url', true);
+request.onload = function() {
+  if (request.status >= 200 && request.status < 400) {
+    // Success!
+    var data = JSON.parse(request.responseText);
+  } else {
+    // We reached our target server, but it returned an error
+
+  }
+};
+request.onerror = function() {
+  // There was a connection error of some sort
+};
+request.send();
+`;
+
 doc.hide=
 `
 $(element).hide();
 element.style.display='none';
+`;
+
+doc.ajax_post=
+`
+$.ajax({
+  type: 'POST',
+  url: '/my/url',
+  data: data
+});
+
+var request = new XMLHttpRequest();
+request.open('POST', '/my/url', true);
+request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+request.send(data);
+`;
+
+doc.ajax_request=
+`
+$.ajax({
+  type: 'GET',
+  url: '/my/url',
+  success: function(resp) { /* ... */ },
+  error: function() { /* ... */ }
+});
+
+var request = new XMLHttpRequest();
+request.open('GET', '/my/url', true);
+request.onload = function() {
+  if (request.status >= 200 && request.status < 400) {
+    // Success!
+    var resp = request.responseText;
+  } else {
+    // We reached our target server, but it returned an error
+  }
+};
+request.onerror = function() {
+  // There was a connection error of some sort
+};
+request.send();
+`;
+
+doc.effect_fade_in=
+`
 `;
 
 doc.show=
