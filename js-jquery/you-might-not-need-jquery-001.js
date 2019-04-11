@@ -168,4 +168,4 @@ doc.parse_json='';
 
 doc.trim='';
 
-doc.type='';
+doc.typeni='';
