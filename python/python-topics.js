@@ -3,6 +3,15 @@
 doc.topics=
 `
 python
+number
+string
+boolean
+function
+method
+
+list
+dictinary
+tuple
 `;
 
 dev.udemy_complete_python_bootcamp=
