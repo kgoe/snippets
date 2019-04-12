@@ -8,6 +8,12 @@ html5 boilerplate 5.x
 html5 boilerplate 6.x
 html5 boilerplate 7.x
 
+### Design Patterns
+
+DP1|creational
+DP2|structural
+DP3|behavioral
+
 ### HTML5 boilerplate
 index.html
 404.html
@@ -31,5 +37,4 @@ RXXX|Design-Patterns-JS
 RXXX|JavaScript-Templates
 R200|Design Patterns in JavaScript ES6
 R201|
-
 A001|express-4.16.4
