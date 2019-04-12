@@ -14,5 +14,12 @@ https://regex101.com/
 https://www.staticgen.com/
 https://gohugo.io/
 https://jekyllrb.com/
+
+# SITES
+google
+yahoo
+youtube
+microsoft
+bing
 `;
 
