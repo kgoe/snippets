@@ -9,9 +9,9 @@ boolean
 function
 method
 
-list
-dictinary
-tuple
+list = [1,2,3]
+dictinary = {'a':1, 'b':2, 'c':3}
+tuple = (1,2,3)
 `;
 
 dev.udemy_complete_python_bootcamp=
