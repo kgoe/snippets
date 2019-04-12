@@ -5,14 +5,16 @@ doc.topics=
 python
 number
 string
-boolean
+boolean # True False
 function
 method
 
-list = [1,2,3]
-dictinary = {'a':1, 'b':2, 'c':3}
-tuple = (1,2,3)
-set = set()
+list = [1,2,3] # indexed pair
+dictinary = {'a':1, 'b':2, 'c':3} # key  - value pair
+tuple = (1,2,3) # immutable
+set = set() # unique {1,2,3,4} set([1,1,2,3])
+
+File I/O
 `;
 
 dev.udemy_complete_python_bootcamp=
@@ -38,4 +40,13 @@ udemy complete python bootcamp
 18. bonus special offers | 1
 19. appendix : older python 2 material | 74
 20. bonus coupons for other courses | 1
+`;
+
+doc.links=
+`
+http://codingbat.com/python
+https://projecteuler.net/archives
+http://www.codeabbey.com/index/task_list
+https://www.reddit.com/r/dailyprogrammer
+http://www.pythonchallenge.com/
 `;
