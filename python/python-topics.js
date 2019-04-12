@@ -2,8 +2,11 @@
 
 doc.topics=
 `
-list
+python
+`;
 
+dev.udemy_complete_python_bootcamp=
+`
 udemy complete python bootcamp
 1. course overview
 2. python setup
