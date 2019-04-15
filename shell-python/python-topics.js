@@ -102,4 +102,6 @@ https://projecteuler.net/archives
 http://www.codeabbey.com/index/task_list
 https://www.reddit.com/r/dailyprogrammer
 http://www.pythonchallenge.com/
+https://jupyter.org/
+https://developer.rhino3d.com/guides/rhinopython/python-dictionaries/
 `;
