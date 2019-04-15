@@ -9,10 +9,18 @@ boolean # True False
 function
 method
 
-list = [1,2,3] # indexed pair
-dictinary = {'a':1, 'b':2, 'c':3} # key  - value pair
-tuple = (1,2,3) # immutable
-set = set() # unique {1,2,3,4} set([1,1,2,3])
+# indexed collection
+list = [1,2,3]
+
+# key  - value pair collection
+dictinary = {'a':1, 'b':2, 'c':3}
+
+# immutable indexed collection
+tuple = (1,2,3)
+
+# unique indexed collection
+set = set()
+# unique {1,2,3,4} set([1,1,2,3])
 
 File I/O
 `;
