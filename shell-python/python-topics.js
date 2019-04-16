@@ -10,17 +10,22 @@ function
 method
 
 # indexed collection
-list = [1,2,3]
+# list
+exampleList = [1,2,3]
 
 # key  - value pair collection
-dictinary = {'a':1, 'b':2, 'c':3}
+# dictionary
+exampleDictionary = {'a':1, 'b':2, 'c':3}
 
 # immutable indexed collection
-tuple = (1,2,3)
+# tuple
+exampleTuple = (1,2,3)
 
 # unique indexed collection
-set = set()
 # unique {1,2,3,4} set([1,1,2,3])
+# set
+exampleSet1 = set({1,2,3,4})
+exampleSet2 = set([1,2,3,4])
 
 File I/O
 `;

@@ -1,3 +1,5 @@
+;doc={};
+
 # Web Theme Pattern Research
 TPA
   HomePage + 3 subpage

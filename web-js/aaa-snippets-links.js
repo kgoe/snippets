@@ -1,6 +1,4 @@
-;
-
-doc = {};
+;doc={};
 
 doc.links =
 `

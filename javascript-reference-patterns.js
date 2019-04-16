@@ -6,7 +6,11 @@
 ((doc)=>{
 })(doc);
 
-doc.sort=
+/**
+ * Reference Index
+ */
+((doc)=>{
+doc.REF=
 `
 R001|essential-js-design-patterns|https://github.com/addyosmani/essential-js-design-patterns
 R002|javascript-design-patterns-for-humans|https://github.com/kamranahmedse/design-patterns-for-humans
@@ -16,11 +20,13 @@ R010|JavaScript-Templates|https://blueimp.github.io/JavaScript-Templates/
 R200|Design-Patterns-in-Javascript-ES6
 `;
 
+})(doc);
+
 /**
  * R001
  */
 ((doc)=>{
-  doc.R001=
+doc.R001=
 `
 Introduction
 What is a Pattern
@@ -71,7 +77,7 @@ References
  * R002
  */
 ((doc)=>{
-  doc.R002=
+doc.R002=
 `
 creational
 - simple factory
@@ -106,7 +112,7 @@ behavioral
  * R003
  */
 ((doc)=>{
-  doc.R003=
+doc.R003=
 `
 creational
 - abstract factory
@@ -152,7 +158,7 @@ strategy
  * R004
  */
 ((doc)=>{
-  doc.R004=
+doc.R004=
 `
 creational patterns
 - abstract factory
@@ -186,7 +192,7 @@ behavioral patterns
  * R010
  */
 ((doc)=>{
-  doc.R010=
+doc.R010=
 `
 client side:tmpl.min.js
 `;
@@ -196,7 +202,7 @@ client side:tmpl.min.js
  * R200
  */
 ((doc)=>{
-  doc.R200=
+doc.R200=
 `
 Design Pattern in JavaScript - ES6
 Adapter
