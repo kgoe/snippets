@@ -109,4 +109,5 @@ https://www.reddit.com/r/dailyprogrammer
 http://www.pythonchallenge.com/
 https://jupyter.org/
 https://developer.rhino3d.com/guides/rhinopython/python-dictionaries/
+https://stackoverflow.com/questions/645312/what-is-the-quickest-way-to-http-get-in-python
 `;

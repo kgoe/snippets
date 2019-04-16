@@ -16,7 +16,7 @@ R001|essential-js-design-patterns|https://github.com/addyosmani/essential-js-des
 R002|javascript-design-patterns-for-humans|https://github.com/kamranahmedse/design-patterns-for-humans
 R003|JavaScript-Design-Patterns|http://robdodson.me/blog/2012/08/03/javascript-design-patterns/
 R004|Design-Patterns-JS|https://coveralls.io/github/FelipeBB/Design-Patterns-JS
-R005|JS-30-seconds-of-code|https://github.com/30-seconds/30-seconds-of-code
+R005|JS-30-seconds-of-code|https://github.com/30-seconds/30-seconds-of-code|https://syndicode.com/2018/10/29/useful-javascript-snippets-that-you-can-understand-in-30-seconds/
 R010|JavaScript-Templates|https://blueimp.github.io/JavaScript-Templates/
 R200|Design-Patterns-in-Javascript-ES6
 `;
