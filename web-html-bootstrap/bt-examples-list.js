@@ -2,46 +2,46 @@
 
 doc.bootstrap3examples=
 `
-01|starter template
-02|bootstrap theme
-03|grids
-04|jumbotron
-05|narrow jumbotron
-06|navbar
-07|static top navbar
-08|fixed navbar
-09|cover
-10|carousel
-11|blog
-12|dashboard
-13|sign in page
-14|justified nav
-15|sticky footer
-16|sticky footer with nav
-17|non responsive bootstrap
-18|off canvas
+bt03_01|starter template
+bt03_02|bootstrap theme
+bt03_03|grids
+bt03_04|jumbotron
+bt03_05|narrow jumbotron
+bt03_06|navbar
+bt03_07|static top navbar
+bt03_08|fixed navbar
+bt03_09|cover
+bt03_10|carousel
+bt03_11|blog
+bt03_12|dashboard
+bt03_13|sign in page
+bt03_14|justified nav
+bt03_15|sticky footer
+bt03_16|sticky footer with nav
+bt03_17|non responsive bootstrap
+bt03_18|off canvas
 `;
 
 doc.bootstrap4examples=
 `
-01|album
-02|pricing
-03|checkout
-04|product
-05|cover
-06|carousel
-07|blog
-08|dashboard
-09|sign in
-10|sticky footer
-11|sticky footer navbar
-12|starter template
-13|grid
-14|jumbotron
-15|navbars
-16|navbar static
-17|navbar fixed
-18|navbar bottom
-19|floating labels
-20|offcanvas
+bt04_01|album
+bt04_02|pricing
+bt04_03|checkout
+bt04_04|product
+bt04_05|cover
+bt04_06|carousel
+bt04_07|blog
+bt04_08|dashboard
+bt04_09|sign in
+bt04_10|sticky footer
+bt04_11|sticky footer navbar
+bt04_12|starter template
+bt04_13|grid
+bt04_14|jumbotron
+bt04_15|navbars
+bt04_16|navbar static
+bt04_17|navbar fixed
+bt04_18|navbar bottom
+bt04_19|floating labels
+bt04_20|offcanvas
 `;

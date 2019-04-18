@@ -148,5 +148,8 @@ wget
 
 man
 help
+
+echo "text" > filename
+echo "text" >> /user/ubuntu/filename
 `;
 })(doc);
