@@ -31,3 +31,14 @@ num_list = [4,3,7,1,9]
 num_list.sort()
 
 num_list.reverse()
+
+my_dictionary= {
+    'a': 'one',
+    'b': 'two',
+    'c': 'three',
+}
+
+my_dictionary['d'] = 'four'
+
+my_tuple=(0,1,2,3)
+# my_tuple[1] = 4 # error
