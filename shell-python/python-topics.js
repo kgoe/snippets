@@ -2,12 +2,29 @@
 
 doc.topics=
 `
-python
-number
-string
-boolean # True False
-function
-method
+python3 data types
+integers|int
+floating point|float
+strings|str
+lists|list
+dictionaries|dict
+tuples|tup
+sets|set
+booleans|bool|True|False
+
+# numbers
+1
+2
+2*4
+4-1
+1.5
+7/2
+6%4
+23%9
+24%2
+2 ** 4
+2 + 20 * 15 + 4
+2 + 30 * ( 4 + 5 )
 
 # indexed collection
 # list
