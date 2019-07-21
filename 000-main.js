@@ -1,3 +1,4 @@
 ;doc={};
+;const print=console.log;
 
-console.log('000-main.js');
+print('000-main.js' + ' gg-kgoe-snippets');
